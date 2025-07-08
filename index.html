@@ -6,9 +6,15 @@
     <title>Earth Economic Forum</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         html {
             scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
         }
         .cookie-banner {
             animation: slideIn 0.5s ease-out;
@@ -83,7 +89,7 @@
         }
     </style>
 </head>
-<body class="font-sans bg-gray-50">
+<body class="font-sans bg-white text-slate-800"> <!-- Changed background to white, added base text color -->
     <!-- Header -->
     <header class="bg-white shadow-sm sticky top-0 z-40">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -97,12 +103,12 @@
                 
                 <!-- Desktop Navigation -->
                 <nav class="hidden md:flex space-x-6"> <!-- Adjusted space-x for potentially more items -->
-                    <a href="#welcome-eef" class="text-gray-900 hover:text-blue-600 px-3 py-2 text-sm font-medium nav-link">EARTH</a>
-                    <a href="#about-eef" class="text-gray-900 hover:text-blue-600 px-3 py-2 text-sm font-medium nav-link">Principles</a>
-                    <a href="#regain-sovereignty" class="text-gray-900 hover:text-blue-600 px-3 py-2 text-sm font-medium nav-link">NEO</a> <!-- Shortened for space -->
-                    <a href="https://eartheconomicforum.org/earthbank" target="_blank" class="text-gray-900 hover:text-blue-600 px-3 py-2 text-sm font-medium nav-link">EarthBank</a>
-                    <a href="https://eartheconomicforum.org/lovecoin" target="_blank" class="text-gray-900 hover:text-blue-600 px-3 py-2 text-sm font-medium nav-link">LoveCoin</a>
-                    <a href="https://eartheconomicforum.org/wewecoin" target="_blank" class="text-gray-900 hover:text-blue-600 px-3 py-2 text-sm font-medium nav-link">WeWeCoin</a>
+                    <a href="#welcome-eef" class="text-slate-700 hover:text-blue-600 px-3 py-2 text-sm font-medium nav-link">EARTH</a>
+                    <a href="#about-eef" class="text-slate-700 hover:text-blue-600 px-3 py-2 text-sm font-medium nav-link">Principles</a>
+                    <a href="#regain-sovereignty" class="text-slate-700 hover:text-blue-600 px-3 py-2 text-sm font-medium nav-link">NEO</a> <!-- Shortened for space -->
+                    <a href="https://eartheconomicforum.org/earthbank" target="_blank" class="text-slate-700 hover:text-blue-600 px-3 py-2 text-sm font-medium nav-link">EarthBank</a>
+                    <a href="https://eartheconomicforum.org/lovecoin" target="_blank" class="text-slate-700 hover:text-blue-600 px-3 py-2 text-sm font-medium nav-link">LoveCoin</a>
+                    <a href="https://eartheconomicforum.org/wewecoin" target="_blank" class="text-slate-700 hover:text-blue-600 px-3 py-2 text-sm font-medium nav-link">WeWeCoin</a>
                 </nav>
                 
                 <!-- Mobile menu button -->
@@ -123,7 +129,7 @@
             <div class="md:w-2/3">
                 <h1 class="text-4xl md:text-5xl font-bold mb-6">Ready for the Earth Economy?</h1>
                 <p class="text-xl mb-8">As our own sovereign, People of Earth are co-owners of Earth. Lets live like we own it.</p>
-                <a href="https://eartheconomicforum.org/neo:-new-earth-order" class="inline-block bg-white text-blue-800 px-6 py-3 rounded font-medium hover:bg-gray-100 transition">
+                <a href="https://eartheconomicforum.org/neo:-new-earth-order" class="inline-block bg-white text-blue-800 px-6 py-3 rounded-md font-medium hover:bg-gray-100 transition"> <!-- Changed rounded -->
                     Take Me to Earth
                 </a>
             </div>
@@ -133,97 +139,113 @@
     <!-- About EEF Section -->
     <section id="about-eef" class="py-16 bg-white"> <!-- Added id -->
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl font-bold text-center mb-12">About EEF</h2>
+            <h2 class="text-3xl font-bold text-slate-900 text-center mb-12">About EEF</h2> <!-- Darker heading -->
             
             <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-gray-50 p-6 rounded-lg center-card transition duration-300">
-                    <div class="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mb-4">
-                        <i class="fas fa-globe-europe text-blue-600 text-xl"></i> <!-- Icon changed for relevance -->
-                    </div>
-                    <h3 class="text-xl font-semibold mb-3">Earth vs World</h3>
-                    <p class="text-gray-600 mb-4">As Nature reminds us that we are Life, EEF exists to remind humans that Earth is not to be confused with World. Earth is a real natural planet that supports real natural life. Earth Economic Forum (EEF) is not to be confused with World Economic Forum (WEF).</p>
-                    <a href="https://eartheconomicforum.org/principles" class="text-blue-600 font-medium inline-flex items-center">
+                <div class="bg-white rounded-md center-card transition duration-300 overflow-hidden border border-slate-200 shadow-lg">
+                    <img src="https://www.weforum.org/packs/static/app/assets/images/homepage/uplink-initiative-ceff9cfdd2e858ac3307.jpeg" alt="Placeholder Image 1" class="w-full h-40 object-cover">
+                    <div class="p-6">
+                        <div class="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                            <i class="fas fa-globe-europe text-blue-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-slate-900 mb-3">Earth vs World</h3>
+                    <p class="text-slate-700 mb-4">As Nature reminds us that we are Life, EEF exists to remind humans that Earth is not to be confused with World. Earth is a real natural planet that supports real natural life. Earth Economic Forum (EEF) is not to be confused with World Economic Forum (WEF).</p>
+                    <a href="https://eartheconomicforum.org/principles" class="text-blue-600 hover:text-blue-700 font-medium inline-flex items-center">
                         Learn more
                         <i class="fas fa-chevron-right ml-2 text-sm"></i>
                     </a>
                 </div>
+                </div>
                 
-                <div class="bg-gray-50 p-6 rounded-lg center-card transition duration-300">
-                    <div class="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mb-4">
-                        <i class="fas fa-lightbulb text-blue-600 text-xl"></i> <!-- Icon changed for relevance -->
-                    </div>
-                    <h3 class="text-xl font-semibold mb-3">First Principles: Life & Earth</h3>
-                    <p class="text-gray-600 mb-4">If Life is a product, Energy is the MVP. Earth and Life are One Input/Output Machine. Life breathing in oxygenated air (and breathing out carbonated air) is synchronous with Earth breathing in carbonated air (and breathing out oxygenated air). There is practically no time difference between the two production/consumption cycles for any economic arbitrage to be created by a retailer or a banker. Earth and Life are not two separate entities, with zero room for middlemen.</p>
-                    <a href="https://eartheconomicforum.org/principles" class="text-blue-600 font-medium inline-flex items-center">
+                <div class="bg-white rounded-md center-card transition duration-300 overflow-hidden border border-slate-200 shadow-lg">
+                    <img src="https://www.weforum.org/packs/static/app/assets/images/homepage/si-initiative-45d9653189ca943b0dc7.jpeg" alt="Placeholder Image 2" class="w-full h-40 object-cover">
+                    <div class="p-6">
+                        <div class="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                            <i class="fas fa-lightbulb text-blue-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-slate-900 mb-3">First Principles: Life & Earth</h3>
+                    <p class="text-slate-700 mb-4">If Life is a product, Energy is the MVP. Earth and Life are One Input/Output Machine. Life breathing in oxygenated air (and breathing out carbonated air) is synchronous with Earth breathing in carbonated air (and breathing out oxygenated air). There is practically no time difference between the two production/consumption cycles for any economic arbitrage to be created by a retailer or a banker. Earth and Life are not two separate entities, with zero room for middlemen.</p>
+                    <a href="https://eartheconomicforum.org/principles" class="text-blue-600 hover:text-blue-700 font-medium inline-flex items-center">
                         Explore Principles
                         <i class="fas fa-chevron-right ml-2 text-sm"></i>
                     </a>
                 </div>
+                </div>
                 
-                <div class="bg-gray-50 p-6 rounded-lg center-card transition duration-300">
-                    <div class="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mb-4">
-                        <i class="fas fa-landmark text-blue-600 text-xl"></i> <!-- Icon changed for relevance -->
-                    </div>
-                    <h3 class="text-xl font-semibold mb-3">Earth Economics & Life Sovereignty</h3>
-                    <p class="text-gray-600 mb-4">Sovereignty is the principle that Life is its own God. Applied to the human species, Sovereignty is the principle that every human is her own government. This principle is why 3.2 billion humans will vote to elect their representatives across 65 countries in 2024 alone. From here, it is but a small step for humanity to align our planet's economics to the principle of Sovereignty. We are championing a "One Earth, One Humanity" Economy that makes us all co-owners of Earth.</p>
-                    <a href="https://eartheconomicforum.org/neo:-new-earth-order" class="text-blue-600 font-medium inline-flex items-center">
+                <div class="bg-white rounded-md center-card transition duration-300 overflow-hidden border border-slate-200 shadow-lg">
+                    <img src="https://assets.weforum.org/article/image/xWQoxNent2KWIDis6LRaPYkvcPXTMszMDTBMvw0U3Zs.jpg" alt="Placeholder Image 3" class="w-full h-40 object-cover">
+                    <div class="p-6">
+                        <div class="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                            <i class="fas fa-landmark text-blue-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-slate-900 mb-3">Earth Economics & Life Sovereignty</h3>
+                    <p class="text-slate-700 mb-4">Sovereignty is the principle that Life is its own God. Applied to the human species, Sovereignty is the principle that every human is her own government. This principle is why 3.2 billion humans will vote to elect their representatives across 65 countries in 2024 alone. From here, it is but a small step for humanity to align our planet's economics to the principle of Sovereignty. We are championing a "One Earth, One Humanity" Economy that makes us all co-owners of Earth.</p>
+                    <a href="https://eartheconomicforum.org/neo:-new-earth-order" class="text-blue-600 hover:text-blue-700 font-medium inline-flex items-center">
                         Discover NEO
                         <i class="fas fa-chevron-right ml-2 text-sm"></i>
                     </a>
+                </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- REGAIN Sovereignty Section -->
-    <section id="regain-sovereignty" class="py-16 bg-gray-50"> <!-- Added id -->
+    <section id="regain-sovereignty" class="py-16 bg-slate-50"> <!-- Added id, changed background -->
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold mb-4">REGAIN Sovereignty</h2>
-                <p class="text-gray-600 max-w-3xl mx-auto">Life belongs. It doesn't own. It isn't owned. Cooperate, don't compete. Love, not fear. These are the paths to reclaiming our sovereignty.</p> <!-- Consolidated intro -->
+                <h2 class="text-3xl font-bold text-slate-900 mb-4">REGAIN Sovereignty</h2> <!-- Ensure heading is dark -->
+                <p class="text-slate-700 max-w-3xl mx-auto">Life belongs. It doesn't own. It isn't owned. Cooperate, don't compete. Love, not fear. These are the paths to reclaiming our sovereignty.</p> <!-- Adjusted text color -->
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8"> <!-- Changed grid to 3 columns -->
                 <!-- Card 1: Belong -->
-                <div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition p-6">
-                     <!-- Removed img, added icon placeholder if desired -->
-                    <div class="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mb-4 mx-auto">
-                        <i class="fas fa-heart text-blue-600 text-xl"></i> <!-- Placeholder icon -->
-                    </div>
-                    <h3 class="font-semibold text-xl mb-3 text-center">Belong. Not Own</h3>
-                    <p class="text-gray-600 mb-4 text-sm">Life belongs. It doesn't own. It isn't owned. Belonging is an instinct that comes naturally to life. Ownership is an idea that comes artificially to humans. Life can dissociate from every man-made idea but Life cannot dissociate from Earth.</p>
+                <div class="bg-white rounded-md overflow-hidden shadow-lg transition border border-slate-200 center-card">
+                    <img src="https://assets.weforum.org/community/image/dzpmrG_Ffb5O6H_CBimpV45yCi32npw20dQkTp56Zww.jpg" alt="Placeholder Image 4" class="w-full h-40 object-cover">
+                    <div class="p-6">
+                        <div class="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mb-4 mx-auto">
+                            <i class="fas fa-heart text-blue-600 text-xl"></i>
+                        </div>
+                        <h3 class="font-semibold text-xl text-slate-900 mb-3 text-center">Belong. Not Own</h3>
+                    <p class="text-slate-700 mb-4 text-sm">Life belongs. It doesn't own. It isn't owned. Belonging is an instinct that comes naturally to life. Ownership is an idea that comes artificially to humans. Life can dissociate from every man-made idea but Life cannot dissociate from Earth.</p>
                     <div class="text-center">
-                        <a href="https://eartheconomicforum.org/earth" class="text-blue-600 font-medium inline-flex items-center">
+                        <a href="https://eartheconomicforum.org/earth" class="text-blue-600 hover:text-blue-700 font-medium inline-flex items-center">
                             BELONG
                             <i class="fas fa-chevron-right ml-2 text-sm"></i>
                         </a>
                     </div>
                 </div>
+                </div>
                 
                 <!-- Card 2: Cooperate -->
-                <div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition p-6">
-                    <div class="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mb-4 mx-auto">
-                        <i class="fas fa-users text-blue-600 text-xl"></i> <!-- Placeholder icon -->
-                    </div>
-                    <h3 class="font-semibold text-xl mb-3 text-center">Cooperate. Not Compete</h3>
-                    <p class="text-gray-600 mb-4 text-sm">To Live is to be a seeker. Of ways of life that don't require a belief in violence. Every human alive today on Earth has reached here because Life has travelled to us in an unbroken chain traversing through 3,00,000 ancestors. World economics require violence in Earth-Life relationships.</p>
+                <div class="bg-white rounded-md overflow-hidden shadow-lg transition border border-slate-200 center-card">
+                    <img src="https://assets.weforum.org/community/image/QlNtZirHjUYX2YovLGnIUXKt1bjGXr6UjWLaT8_rVNs.jpg" alt="Placeholder Image 5" class="w-full h-40 object-cover">
+                    <div class="p-6">
+                        <div class="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mb-4 mx-auto">
+                            <i class="fas fa-users text-blue-600 text-xl"></i>
+                        </div>
+                        <h3 class="font-semibold text-xl text-slate-900 mb-3 text-center">Cooperate. Not Compete</h3>
+                    <p class="text-slate-700 mb-4 text-sm">To Live is to be a seeker. Of ways of life that don't require a belief in violence. Every human alive today on Earth has reached here because Life has travelled to us in an unbroken chain traversing through 3,00,000 ancestors. World economics require violence in Earth-Life relationships.</p>
                     <div class="text-center">
-                        <a href="https://eartheconomicforum.org/earth" class="text-blue-600 font-medium inline-flex items-center">
+                        <a href="https://eartheconomicforum.org/earth" class="text-blue-600 hover:text-blue-700 font-medium inline-flex items-center">
                             Co-OWN EARTH
                             <i class="fas fa-chevron-right ml-2 text-sm"></i>
                         </a>
                     </div>
                 </div>
+                </div>
                 
                 <!-- Card 3: Love -->
-                <div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition p-6">
-                     <div class="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mb-4 mx-auto">
-                        <i class="fas fa-hand-holding-heart text-blue-600 text-xl"></i> <!-- Placeholder icon -->
-                    </div>
-                    <h3 class="font-semibold text-xl mb-3 text-center">Love. Not Fear</h3>
-                    <p class="text-gray-600 mb-4 text-sm">Love is the original currency of Life. Love makes living our life's work. Love fulfils Life's purpose - to traverse Time without violence. Fear breeds violence in our thoughts, our speech, our actions, our economics. The belief that we are all sovereign, co-owners of Earth liberates us from Fear, Greed, Competition.</p>
+                <div class="bg-white rounded-md overflow-hidden shadow-lg transition border border-slate-200 center-card">
+                    <img src="https://assets.weforum.org/community/image/_8hZNE-s9S0J6qetZu-iK8S2nycRN2-_6QZm_FBgt3Q.jpg" alt="Placeholder Image 6" class="w-full h-40 object-cover">
+                    <div class="p-6">
+                        <div class="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mb-4 mx-auto">
+                            <i class="fas fa-hand-holding-heart text-blue-600 text-xl"></i>
+                        </div>
+                        <h3 class="font-semibold text-xl text-slate-900 mb-3 text-center">Love. Not Fear</h3>
+                    <p class="text-slate-700 mb-4 text-sm">Love is the original currency of Life. Love makes living our life's work. Love fulfils Life's purpose - to traverse Time without violence. Fear breeds violence in our thoughts, our speech, our actions, our economics. The belief that we are all sovereign, co-owners of Earth liberates us from Fear, Greed, Competition.</p>
                     <div class="text-center">
-                        <a href="https://eartheconomicforum.org/earth" class="text-blue-600 font-medium inline-flex items-center">
+                        <a href="https://eartheconomicforum.org/earth" class="text-blue-600 hover:text-blue-700 font-medium inline-flex items-center">
                             LOVE
                             <i class="fas fa-chevron-right ml-2 text-sm"></i>
                         </a>
@@ -238,11 +260,12 @@
     <!-- Hello Section (Replaces Spotlight) -->
     <section id="welcome-eef" class="py-16 bg-white"> <!-- Added id -->
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center"> <!-- Centered text for this section -->
-            <h2 class="text-3xl font-bold mb-4">Welcome to EEF!</h2>
-            <p class="text-gray-600 mb-8 max-w-2xl mx-auto">EEF is a humanity-scale celebration of life's sovereignty. Humans of Earth reclaim life's sovereignty by coming together to discover better economics, better self-governance, better rules. Life and Earth are better together. Better than anything the World has to offer.</p>
+            <img src="https://cdn.jwplayer.com/thumbs/rDWfzEhj-1920.jpg" alt="Placeholder Video Thumbnail" class="w-full md:w-2/3 lg:w-1/2 mx-auto h-auto object-cover rounded-md shadow-md mb-8"> <!-- Changed rounded-lg to rounded-md -->
+            <h2 class="text-3xl font-bold text-slate-900 mb-4">Welcome to EEF!</h2> <!-- Darker heading -->
+            <p class="text-slate-700 mb-8 max-w-2xl mx-auto">EEF is a humanity-scale celebration of life's sovereignty. Humans of Earth reclaim life's sovereignty by coming together to discover better economics, better self-governance, better rules. Life and Earth are better together. Better than anything the World has to offer.</p> <!-- Adjusted text color -->
             
             <div class="flex justify-center"> <!-- Centering the button -->
-                <a href="https://eartheconomicforum.org/earth" class="inline-block bg-blue-600 text-white px-6 py-3 rounded font-medium hover:bg-blue-700 transition">
+                <a href="https://eartheconomicforum.org/earth" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-md font-medium hover:bg-blue-700 transition"> <!-- Changed rounded -->
                     Sign Up to Earth Today
                 </a>
             </div>
@@ -255,13 +278,14 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col md:flex-row items-center">
                 <div class="md:w-1/2 mb-8 md:mb-0 text-center md:text-left">
+                    <img src="https://www.weforum.org/a-weekly-logo.svg" alt="EEF Placeholder Small Logo" class="h-10 mb-4 mx-auto md:mx-0"> <!-- Added small logo -->
                     <h2 class="text-3xl font-bold mb-2">Connect With EEF</h2>
                     <p class="text-blue-200">Out with world, in with earth. Hear what EEF the koala thinks about wef the klaus.</p>
                 </div>
                 <div class="md:w-1/2 w-full">
                     <form class="flex flex-col sm:flex-row gap-3">
-                        <input type="email" placeholder="Your email" class="flex-grow px-4 py-3 rounded text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500" title="Email input for newsletter">
-                        <button type="submit" class="bg-white text-blue-800 px-6 py-3 rounded font-medium hover:bg-gray-100 transition whitespace-nowrap">
+                        <input type="email" placeholder="Your email" class="flex-grow px-4 py-3 rounded-md text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500" title="Email input for newsletter"> <!-- Changed rounded -->
+                        <button type="submit" class="bg-white text-blue-800 px-6 py-3 rounded-md font-medium hover:bg-gray-100 transition whitespace-nowrap"> <!-- Changed rounded -->
                             Sign up
                         </button>
                     </form>
@@ -273,7 +297,7 @@
     <!-- Social Media Section -->
     <section class="py-12 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-center text-xl font-semibold mb-8">Follow us wherever you get your content</h2>
+            <h2 class="text-center text-xl font-semibold text-slate-900 mb-8">Follow us wherever you get your content</h2> <!-- Darker heading -->
             <div class="flex justify-center space-x-6">
                 <a href="#" class="text-gray-600 hover:text-blue-600 text-2xl">
                     <i class="fab fa-facebook"></i>
